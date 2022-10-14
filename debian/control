@@ -1,0 +1,31 @@
+Source: node-parseurl
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Leo Iannacone <l3on@ubuntu.com>, Andrew Kelley <superjoe30@gmail.com>
+Build-Depends:
+ debhelper-compat (= 12)
+ , dh-buildinfo
+ , nodejs
+ , mocha
+ , pkg-js-tools (>= 0.8.8)
+Standards-Version: 4.4.1
+Homepage: https://github.com/expressjs/parseurl
+Vcs-Git: https://salsa.debian.org/js-team/node-parseurl.git
+Vcs-Browser: https://salsa.debian.org/js-team/node-parseurl
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-parseurl
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , nodejs
+Description: parse a url with memoization
+ Simple module which allows developer to get pathname:
+ .
+ var pathname = parseurl(req)
+ .
+ and `pathname` can then be simply passed to a router or something.
+ .
+ Node.js is an event-based server-side JavaScript engine.
