@@ -1,3 +1,25 @@
+node-parseurl (1.3.3-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Remove MIA uploader Andrew Kelley <superjoe30@gmail.com>. Closes: #909890
+  * Apply multi-arch hints.
+    + node-parseurl: Add Multi-Arch: foreign.
+
+  [ lintian-brush ]
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ Yadd ]
+  * Bump debhelper compatibility level to 13
+  * Add myself to uploaders list
+  * Fix debian/watch
+  * Drop dependency to nodejs
+  * Mark test dependencies with <!nocheck>
+
+ -- Yadd <yadd@debian.org>  Thu, 23 Dec 2021 15:43:13 +0100
+
 node-parseurl (1.3.3-1) unstable; urgency=medium
 
   * Team upload
